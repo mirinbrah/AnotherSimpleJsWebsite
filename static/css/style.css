@@ -1,0 +1,45 @@
+/* Базовые стили для всей страницы */
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0; /* Светлый фон по умолчанию */
+    color: #333; /* Тёмный текст по умолчанию */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход при смене темы */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* 
+ * Стили для тёмной темы.
+ * Этот класс `.dark-theme` добавляется и убирается с элемента <body>
+ * с помощью JavaScript.
+ */
+body.dark-theme {
+    background-color: #333; /* Тёмный фон */
+    color: #f0f0f0; /* Светлый текст */
+}
+
+/* Меняем цвет кнопки, когда тема тёмная */
+body.dark-theme button {
+    background-color: #555;
+    color: #f0f0f0;
+    border-color: #f0f0f0;
+}
